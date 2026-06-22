@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>介護老人保健施設 ル・サンク湯澤｜医療法人 博滇会</title>
+<meta name="description" content="さいたま市西区の介護老人保健施設「ル・サンク湯澤」。在宅復帰をめざす在宅強化型老健。リハビリ・医療・栄養を一体で支え、ご自宅での暮らしへの復帰をサポートします。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#2A5298;       /* 博滇会ブランド 紺青 */
+    --primary-dark:#1E3A70;
+    --primary-light:#EAF0F7;
+    --accent:#B23A3A;        /* 朱色寄りの赤（電話・CTA） */
+    --accent-dark:#8B2626;
+    --accent-light:#F7EBEB;
+    --green:#4F8A6B;         /* 在宅復帰・リハビリ・健康のアクセント */
+    --green-dark:#356B50;
+    --green-light:#E4F0E9;
+    --text:#222;
+    --text-sub:#555;
+    --bg:#FFFFFF;
+    --bg-soft:#F6F9F7;
+    --border:#E0E6EE;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{font-family:"Noto Sans JP","Yu Gothic",sans-serif;color:var(--text);line-height:1.85;background:var(--bg-soft);font-size:16px;}
+  h1,h2,h3,h4{font-family:"Noto Serif JP","Yu Mincho",serif;font-weight:700;line-height:1.5;}
+  a{color:var(--primary);text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  .sample-banner{background:var(--primary-dark);color:#fff;text-align:center;padding:11px 16px;font-size:13px;letter-spacing:0.04em;}
+  .sample-banner strong{color:var(--green-light);margin-right:8px;}
+
+  /* ヘッダー */
+  .site-header{background:#fff;border-bottom:3px solid var(--green);position:sticky;top:0;z-index:100;box-shadow:0 1px 4px rgba(42,82,152,0.07);}
+  .header-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:13px 24px;gap:20px;}
+  .logo{display:flex;align-items:center;gap:14px;}
+  .logo-mark-img{height:52px;width:auto;display:block;}
+  .logo-divider{width:1px;height:38px;background:var(--border);}
+  .logo-text{line-height:1.35;}
+  .logo-text .ja{font-family:"Noto Serif JP",serif;font-weight:700;color:var(--primary-dark);font-size:18px;letter-spacing:0.03em;}
+  .logo-text .sub{font-weight:400;font-size:11.5px;color:var(--text-sub);margin-top:2px;letter-spacing:0.03em;}
+  .gnav{display:flex;gap:22px;}
+  .gnav a{color:var(--text);font-size:14px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent;transition:.2s;}
+  .gnav a:hover{color:var(--primary);border-color:var(--green);}
+  .header-cta{display:flex;gap:10px;align-items:center;}
+  .btn-tel-header{background:var(--accent);color:#fff;padding:10px 18px;border-radius:6px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:7px;border:0;cursor:pointer;font-family:inherit;}
+  .btn-tel-header:hover{background:var(--accent-dark);color:#fff;}
+  .btn-recruit-header{background:#fff;color:var(--primary);border:1.5px solid var(--primary);padding:8px 14px;border-radius:6px;font-size:13px;font-weight:700;}
+  .btn-recruit-header:hover{background:var(--primary);color:#fff;}
+
+  /* ファーストビュー */
+  .hero{position:relative;min-height:54vw;max-height:84vh;color:#fff;overflow:hidden;background:#1E3A70;}
+  .hero-bg{position:absolute;inset:0;background-image:url('hero_clinic2.jpg');background-size:cover;background-position:center;}
+  .hero-overlay{position:absolute;inset:0;background:linear-gradient(110deg,rgba(30,58,112,.74) 0%,rgba(30,58,112,.40) 55%,rgba(30,58,112,.16) 100%);z-index:1;}
+  .hero-content{position:relative;z-index:2;max-width:1080px;margin:0 auto;padding:20vh 24px 18vh;}
+  .hero-eyebrow{display:inline-block;background:var(--green);color:#fff;font-family:"Noto Sans JP",sans-serif;font-weight:700;font-size:13px;letter-spacing:0.1em;padding:6px 16px;border-radius:30px;margin-bottom:22px;}
+  .hero-catch{font-size:clamp(30px,5.2vw,54px);font-weight:700;margin:0;line-height:1.55;text-shadow:0 4px 22px rgba(0,0,0,.4);letter-spacing:0.03em;}
+  .hero-catch .nl{display:block;}
+  .hero-sub{margin:22px 0 0;font-size:clamp(15px,2vw,19px);font-weight:500;text-shadow:0 2px 10px rgba(0,0,0,.45);max-width:660px;}
+
+  /* ヒーロー直下 CTA＋紹介 */
+  .intro-message{background:var(--bg-soft);padding:64px 24px 44px;text-align:center;}
+  .intro-message .container{max-width:880px;margin:0 auto;}
+  .intro-cta{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-bottom:34px;}
+  .intro-message p{font-size:17px;line-height:2.05;color:var(--text);margin:0;}
+  .intro-message p .highlight{color:var(--primary);font-weight:700;border-bottom:2px solid var(--green-light);padding:0 2px;}
+
+  .btn-primary{background:var(--accent);color:#fff;padding:17px 32px;border-radius:50px;font-weight:700;font-size:16px;font-family:inherit;display:inline-flex;align-items:center;gap:10px;box-shadow:0 6px 18px rgba(178,58,58,.28);transition:.2s;border:0;cursor:pointer;}
+  .btn-primary:hover{background:var(--accent-dark);color:#fff;transform:translateY(-2px);}
+  .btn-secondary{background:#fff;color:var(--primary);border:1.5px solid var(--primary);padding:17px 32px;border-radius:50px;font-weight:700;font-size:16px;display:inline-flex;align-items:center;gap:10px;transition:.2s;}
+  .btn-secondary:hover{background:var(--primary);color:#fff;}
+
+  /* 情報バー */
+  .info-bar-wrap{max-width:880px;margin:0 auto 78px;padding:0 24px;}
+  .info-bar{background:#fff;border-radius:14px;padding:24px 28px;box-shadow:0 4px 18px rgba(42,82,152,.08);border:1px solid var(--border);}
+  .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:center;}
+  .info-grid>div{text-align:center;padding:0 12px;border-right:1px solid var(--border);}
+  .info-grid>div:last-child{border-right:0;}
+  .info-grid .label{font-size:12px;color:var(--green-dark);font-weight:700;letter-spacing:0.1em;margin-bottom:8px;}
+  .info-grid .value{font-family:"Noto Serif JP",serif;font-size:18px;color:var(--primary-dark);font-weight:700;line-height:1.5;}
+  .info-grid .value small{font-size:12px;color:var(--text-sub);display:block;font-weight:400;margin-top:4px;font-family:"Noto Sans JP",sans-serif;}
+
+  /* セクション共通 */
+  section{padding:80px 24px;}
+  .section-inner{max-width:1080px;margin:0 auto;}
+  .section-head{text-align:center;margin-bottom:48px;}
+  .section-head .en{display:block;font-family:"Noto Sans JP",sans-serif;font-size:12px;letter-spacing:0.22em;color:var(--green-dark);font-weight:700;margin-bottom:8px;}
+  .section-head h2{font-size:30px;color:var(--primary-dark);margin:0 0 12px;}
+  .section-head p{color:var(--text-sub);margin:0;}
+
+  /* 施設について */
+  .about{background:#fff;}
+  .about-card{background:var(--green-light);border-radius:16px;padding:48px 40px;text-align:center;border:1px solid #CFE5D9;}
+  .about-card .leader{font-family:"Noto Serif JP",serif;font-size:23px;color:var(--primary-dark);margin:0 auto 22px;line-height:1.75;font-weight:700;max-width:800px;text-wrap:balance;}
+  .about-card .leader em{font-style:normal;color:var(--green-dark);}
+  .about-card p{max-width:760px;margin:0 auto;color:var(--text);}
+
+  .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;}
+  .feature-card{background:#fff;border-radius:14px;padding:32px 26px;border-top:5px solid var(--green);box-shadow:0 2px 10px rgba(42,82,152,.06);text-align:center;transition:.2s;}
+  .feature-card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(42,82,152,.12);}
+  .feature-card .ic{width:60px;height:60px;border-radius:50%;background:var(--green-light);color:var(--green-dark);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 16px;}
+  .feature-card h3{font-size:19px;color:var(--primary-dark);margin:0 0 10px;}
+  .feature-card p{margin:0;font-size:14.5px;color:var(--text-sub);}
+
+  /* サービス内容 */
+  .services{background:var(--bg-soft);}
+  .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .service-card{background:#fff;border-radius:14px;padding:30px 28px;border-left:5px solid var(--primary);box-shadow:0 2px 8px rgba(42,82,152,.05);}
+  .service-card .num{color:var(--green-dark);font-family:"Noto Serif JP",serif;font-size:13px;font-weight:700;letter-spacing:0.14em;margin-bottom:6px;}
+  .service-card h3{font-size:19px;color:var(--primary);margin:0 0 10px;}
+  .service-card p{margin:0;font-size:14.5px;color:var(--text-sub);}
+  .service-card .tag{display:inline-block;margin-top:12px;font-size:11px;font-weight:700;color:var(--green-dark);background:var(--green-light);padding:3px 10px;border-radius:20px;}
+
+  /* 食事の取り組み（特色バンド） */
+  .food{background:#fff;}
+  .food-band{background:linear-gradient(120deg,var(--green-light) 0%,#F3F8F3 100%);border-radius:18px;padding:44px 40px;display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center;border:1px solid #CFE5D9;}
+  .food-band h3{font-size:24px;color:var(--green-dark);margin:0 0 14px;}
+  .food-band p{margin:0 0 18px;font-size:15px;color:var(--text);}
+  .food-tags{display:flex;flex-wrap:wrap;gap:10px;}
+  .food-tags span{background:#fff;border:1px solid #CFE5D9;color:var(--green-dark);font-size:13px;font-weight:700;padding:7px 14px;border-radius:30px;}
+  .food-emoji{font-size:clamp(60px,9vw,110px);text-align:center;line-height:1;}
+
+  /* 料金 */
+  .fee{background:var(--bg-soft);}
+  .fee-note{max-width:840px;margin:0 auto 28px;background:var(--green-light);border-left:4px solid var(--green);border-radius:8px;padding:14px 20px;font-size:13.5px;color:var(--text-sub);}
+  .fee-table-wrap{max-width:840px;margin:0 auto;overflow-x:auto;border-radius:12px;border:1px solid var(--border);box-shadow:0 2px 12px rgba(42,82,152,.06);}
+  table.fee-table{width:100%;border-collapse:collapse;background:#fff;min-width:560px;}
+  table.fee-table th,table.fee-table td{padding:15px 20px;text-align:left;border-bottom:1px solid var(--border);font-size:15px;}
+  table.fee-table thead th{background:var(--primary);color:#fff;font-family:"Noto Sans JP",sans-serif;font-size:14px;letter-spacing:0.04em;}
+  table.fee-table tbody th{font-family:"Noto Sans JP",sans-serif;font-weight:700;color:var(--primary-dark);background:var(--primary-light);width:42%;}
+  table.fee-table td.price{font-family:"Noto Serif JP",serif;font-weight:700;color:var(--accent);font-size:16px;white-space:nowrap;}
+  table.fee-table tbody tr:last-child th,table.fee-table tbody tr:last-child td{border-bottom:0;}
+  .fee-foot{max-width:840px;margin:18px auto 0;font-size:12.5px;color:var(--text-sub);line-height:1.9;}
+
+  /* 居室・設備ギャラリー */
+  .gallery{background:#fff;}
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .gallery-item{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,#dbe7e0,#eef4f0);box-shadow:0 2px 10px rgba(42,82,152,.07);}
+  .gallery-item .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--green-dark);text-align:center;padding:12px;}
+  .gallery-item .ph .ic{font-size:34px;margin-bottom:8px;opacity:.9;}
+  .gallery-item .ph .cap{font-size:14px;font-weight:700;color:var(--primary-dark);}
+  .gallery-item .ph .tag{font-size:11px;color:var(--text-sub);margin-top:4px;}
+  .gallery-note{text-align:center;margin-top:24px;font-size:13px;color:var(--text-sub);}
+
+  /* ご入所までの流れ */
+  .flow{background:var(--bg-soft);}
+  .flow-list{display:flex;flex-direction:column;gap:16px;max-width:880px;margin:0 auto;}
+  .flow-step{background:#fff;border-radius:12px;padding:22px 26px;display:grid;grid-template-columns:78px 1fr;gap:22px;align-items:center;position:relative;box-shadow:0 2px 8px rgba(42,82,152,.05);}
+  .flow-step .step-num{background:var(--primary);color:#fff;width:64px;height:64px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:"Noto Serif JP",serif;}
+  .flow-step .step-num .label-step{font-size:10px;letter-spacing:0.15em;}
+  .flow-step .step-num .num{font-size:24px;font-weight:700;line-height:1;}
+  .flow-step h3{font-size:18px;color:var(--primary-dark);margin:0 0 2px;}
+  .flow-step p{margin:0;font-size:14px;color:var(--text-sub);}
+  .flow-step:not(:last-child)::after{content:"";position:absolute;left:55px;bottom:-16px;width:0;height:0;border:8px solid transparent;border-top-color:var(--green);z-index:1;}
+
+  /* アクセス */
+  .access{background:#fff;}
+  .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch;}
+  .access-info{background:var(--bg-soft);border-radius:14px;padding:34px 32px;border:1px solid var(--border);}
+  .access-info h3{color:var(--primary-dark);font-size:21px;margin:0 0 18px;}
+  .access-info .row{display:grid;grid-template-columns:92px 1fr;gap:10px;padding:12px 0;border-bottom:1px dashed var(--border);font-size:15px;}
+  .access-info .row:last-child{border-bottom:0;}
+  .access-info .row .lbl{color:var(--green-dark);font-weight:700;font-size:13px;font-family:"Noto Sans JP",sans-serif;padding-top:2px;}
+  .access-map{border-radius:14px;overflow:hidden;border:1px solid var(--border);min-height:340px;box-shadow:0 2px 10px rgba(42,82,152,.05);}
+  .access-map iframe{width:100%;height:100%;min-height:340px;border:0;display:block;}
+
+  /* お問い合わせ */
+  .contact{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;position:relative;overflow:hidden;}
+  .contact::before{content:"";position:absolute;right:-60px;top:-60px;width:340px;height:340px;background:rgba(79,138,107,.28);clip-path:polygon(100% 0,0 0,100% 100%);}
+  .contact .section-inner{position:relative;z-index:1;}
+  .contact .section-head .en{color:var(--green-light);}
+  .contact .section-head h2{color:#fff;}
+  .contact .section-head p{color:rgba(255,255,255,.85);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+  .contact-card{background:rgba(255,255,255,.97);color:var(--text);border-radius:14px;padding:36px 32px;text-align:center;box-shadow:0 8px 26px rgba(0,0,0,.18);}
+  .contact-card h3{color:var(--primary-dark);margin:0 0 8px;font-size:21px;}
+  .contact-card .desc{font-size:14px;color:var(--text-sub);margin:0 0 18px;}
+  .contact-card .big-tel{font-family:"Noto Serif JP",serif;font-size:31px;font-weight:700;color:var(--accent);margin-bottom:4px;}
+  .contact-card .sub-line{font-size:13px;color:var(--text-sub);margin-bottom:16px;}
+  .contact-card .btn-form{background:var(--accent);color:#fff;padding:14px 28px;border-radius:8px;display:inline-block;font-weight:700;font-size:15px;}
+  .contact-card .btn-form:hover{background:var(--accent-dark);color:#fff;}
+  .contact-card .links{display:flex;flex-direction:column;gap:10px;margin-top:6px;font-size:14px;text-align:left;max-width:300px;margin-left:auto;margin-right:auto;}
+  .contact-card .links a{display:flex;align-items:center;gap:10px;color:var(--primary-dark);font-weight:500;padding:10px 14px;border:1px solid var(--border);border-radius:8px;background:#fff;}
+  .contact-card .links a:hover{border-color:var(--green);background:var(--green-light);}
+
+  /* フッター */
+  footer{background:#fff;color:var(--primary-dark);padding:50px 24px 24px;border-top:1px solid var(--border);}
+  .footer-inner{max-width:1080px;margin:0 auto;}
+  .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:30px;border-bottom:1px solid var(--border);}
+  .footer-top h4{font-size:14px;color:var(--primary);margin:0 0 12px;letter-spacing:0.05em;}
+  .footer-top ul{list-style:none;padding:0;margin:0;font-size:13px;line-height:2;}
+  .footer-top a{color:var(--text);}
+  .footer-top a:hover{color:var(--accent);}
+  .footer-brand .logo{margin-bottom:14px;}
+  .footer-brand p{font-size:13px;color:var(--text-sub);margin:0;}
+  .group-site-card{margin:30px 0;background:var(--bg-soft);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:10px;padding:18px 22px;display:flex;align-items:center;gap:18px;color:var(--primary-dark);text-decoration:none;transition:.2s;}
+  .group-site-card:hover{background:#fff;box-shadow:0 4px 16px rgba(42,82,152,.1);transform:translateY(-1px);}
+  .group-site-card img{height:54px;width:auto;flex-shrink:0;background:#fff;padding:6px;border-radius:6px;border:1px solid var(--border);}
+  .group-site-card .gs-name{font-size:17px;font-weight:700;margin-bottom:4px;color:var(--primary-dark);}
+  .group-site-card .gs-desc{font-size:12px;color:var(--text-sub);line-height:1.6;}
+  .group-site-card .gs-arrow{font-size:22px;flex-shrink:0;color:var(--accent);transition:transform .2s;}
+  .group-site-card:hover .gs-arrow{transform:translateX(4px);}
+  .copyright{text-align:center;font-size:12px;color:var(--text-sub);padding-top:24px;}
+
+  /* 電話モーダル */
+  .tel-modal{border:0;border-radius:16px;padding:0;max-width:440px;width:92%;box-shadow:0 20px 50px rgba(0,0,0,.25);background:#fff;color:var(--text);}
+  .tel-modal::backdrop{background:rgba(30,58,112,.55);}
+  .tel-modal-inner{padding:30px 28px 26px;}
+  .tel-modal h3{margin:0 0 6px;color:var(--primary-dark);font-size:21px;text-align:center;}
+  .tel-modal .desc{margin:0 0 18px;text-align:center;font-size:13px;color:var(--text-sub);}
+  .tel-modal .big{display:flex;align-items:center;justify-content:center;gap:8px;font-family:"Noto Serif JP",serif;font-size:30px;font-weight:700;color:var(--accent);margin-bottom:6px;text-decoration:none;}
+  .tel-modal .hours{text-align:center;font-size:13px;color:var(--text-sub);margin:0 0 18px;}
+  .tel-modal-close{display:block;margin:8px auto 0;background:#fff;color:var(--primary-dark);padding:10px 28px;border-radius:8px;border:1.5px solid var(--border);cursor:pointer;font-weight:700;font-size:14px;font-family:inherit;}
+  .tel-modal-close:hover{background:var(--bg-soft);}
+
+  /* レスポンシブ */
+  @media (max-width:900px){
+    .gnav{display:none;}
+    .info-grid{grid-template-columns:1fr;gap:0;}
+    .info-grid>div{border-right:0;border-bottom:1px solid var(--border);padding:16px 0;}
+    .info-grid>div:last-child{border-bottom:0;}
+    .feature-grid,.service-grid,.gallery-grid,.access-grid,.contact-grid,.food-band{grid-template-columns:1fr;}
+    .food-emoji{order:-1;}
+    .footer-top{grid-template-columns:1fr;}
+    .section-head h2{font-size:24px;}
+    section{padding:60px 20px;}
+    .hero-content{padding:16vh 24px 14vh;}
+    .header-cta .btn-recruit-header{display:none;}
+  }
+  @media (max-width:560px){
+    .gallery-grid{grid-template-columns:1fr 1fr;}
+    .logo-text .ja{font-size:15px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="sample-banner">
+  <strong>DESIGN SAMPLE / テストサイト</strong>「Web制作ボリューム提案」サービス系 1ページ完結テンプレート適用版 ／ 料金・写真など一部は仮置きです
+</div>
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="hakushinkai_logo.png" alt="医療法人 博滇会" class="logo-mark-img">
+      <div class="logo-divider"></div>
+      <div class="logo-text">
+        <div class="ja">ル・サンク湯澤</div>
+        <div class="sub">介護老人保健施設 ／ 医療法人 博滇会</div>
+      </div>
+    </div>
+    <nav class="gnav">
+      <a href="#about">施設について</a>
+      <a href="#services">サービス</a>
+      <a href="#food">食事の取り組み</a>
+      <a href="#fee">ご利用料金</a>
+      <a href="#gallery">居室・設備</a>
+      <a href="#flow">ご入所の流れ</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="https://arwrk.net/recruit/hakushinkai" class="btn-recruit-header" target="_blank" rel="noopener">求人情報</a>
+      <button type="button" class="btn-tel-header" onclick="openTelModal()">📞 見学・ご相談</button>
+    </div>
+  </div>
+</header>
+
+<!-- ファーストビュー -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">在宅復帰をめざす「在宅強化型」老健</span>
+    <h1 class="hero-catch"><span class="nl">もう一度、</span><span class="nl">わが家の暮らしへ。</span></h1>
+    <p class="hero-sub">介護老人保健施設「ル・サンク湯澤」。リハビリ・医療・栄養をひとつのチームで支え、住み慣れたご自宅での暮らしへの復帰をサポートします。</p>
+  </div>
+</section>
+
+<!-- ヒーロー直下：CTA＋紹介文 -->
+<section class="intro-message">
+  <div class="container">
+    <div class="intro-cta">
+      <a href="#" class="btn-primary" onclick="openTelModal(); return false;">📞 見学・ご相談はこちら</a>
+      <a href="#services" class="btn-secondary">サービスを見る →</a>
+    </div>
+    <p>
+      さいたま市西区で、<span class="highlight">「家に帰る」を目標にした在宅復帰支援</span>に取り組む介護老人保健施設です。<br>
+      医師・看護・リハビリ・栄養・介護の多職種チームが、退院後の生活と在宅復帰を一体で支えます。
+    </p>
+  </div>
+</section>
+
+<!-- 情報バー -->
+<div class="info-bar-wrap">
+  <div class="info-bar">
+    <div class="info-grid">
+      <div>
+        <div class="label">施設種別</div>
+        <div class="value">介護老人保健施設<small>在宅強化型をめざす老健</small></div>
+      </div>
+      <div>
+        <div class="label">入所定員</div>
+        <div class="value">100名<small>多床室80床 / 個室20床</small></div>
+      </div>
+      <div>
+        <div class="label">アクセス</div>
+        <div class="value">さいたま市西区三橋<small>大宮駅西口よりバス「大69」</small></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 施設について -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="en">ABOUT</span>
+      <h2>ル・サンク湯澤について</h2>
+      <p>病院と自宅の「あいだ」で、もう一度の暮らしを支えます。</p>
+    </div>
+    <div class="about-card">
+      <p class="leader">
+        介護老人保健施設は、<em>リハビリを通じてご自宅での生活への復帰をめざす</em>ための施設です。<br>
+        ル・サンク湯澤は、その人らしい暮らしを取り戻す「在宅強化型」をめざしています。
+      </p>
+      <p>
+        医師2名（湯澤美季・湯澤美菜）を配置し、歯科往診にも対応。看護・リハビリ・栄養・介護の多職種が
+        チームとなって、入所中の生活と在宅復帰を一体で支えます。退院後の療養や、ご家族の介護負担を
+        減らしたい時にも、お気軽にご相談ください。
+      </p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="ic">🏠</div>
+        <h3>在宅復帰支援</h3>
+        <p>「家に帰る」を目標に、リハビリと多職種ケアで在宅復帰をめざす在宅強化型の老健です。</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">🩺</div>
+        <h3>医師2名の医療体制</h3>
+        <p>常勤医師2名を配置し、日々の健康管理に対応。歯科往診にも対応できる体制を整えています。</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">💪</div>
+        <h3>リハビリテーション</h3>
+        <p>専門職によるリハビリで、立つ・歩く・食べるといった生活動作の維持・向上をサポートします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- サービス内容 -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="en">SERVICE</span>
+      <h2>サービス内容</h2>
+      <p>在宅復帰を支える、老健ならではのサービス。</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="num">SERVICE 01</div>
+        <h3>入所（在宅強化型）</h3>
+        <p>定員100名。リハビリと医療・介護を組み合わせ、ご自宅での生活への復帰をめざします。</p>
+      </div>
+      <div class="service-card">
+        <div class="num">SERVICE 02</div>
+        <h3>リハビリテーション</h3>
+        <p>おひとりおひとりの目標に合わせて、生活に根ざしたリハビリを計画的に行います。</p>
+      </div>
+      <div class="service-card">
+        <div class="num">SERVICE 03</div>
+        <h3>医療・健康管理</h3>
+        <p>常勤医師2名・看護スタッフによる日々の健康管理と服薬管理。歯科往診にも対応します。</p>
+      </div>
+      <div class="service-card">
+        <div class="num">SERVICE 04</div>
+        <h3>短期入所・通所リハビリ</h3>
+        <p>ショートステイ・通所リハビリのご相談も承ります。<span class="tag">※提供内容は要確認</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 食事の取り組み -->
+<section class="food" id="food">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="en">MEAL</span>
+      <h2>食事の取り組み</h2>
+      <p>「食べる楽しみ」と「おなかの健康」を大切にしています。</p>
+    </div>
+    <div class="food-band">
+      <div>
+        <h3>腸活ごはんで、おなか活き活き。</h3>
+        <p>
+          「腸活ごはんでおなか活き活きプロジェクト」をはじめ、季節の行事食や各地の郷土料理、
+          手作りおやつなど、毎日の食事を楽しんでいただける工夫を続けています。
+          摂食・嚥下の状態に合わせた食形態の調整にも対応し、安全においしく召し上がっていただけます。
+        </p>
+        <div class="food-tags">
+          <span>🦠 腸活ごはん</span>
+          <span>🎏 季節の行事食</span>
+          <span>🍙 郷土料理</span>
+          <span>🍡 手作りおやつ</span>
+          <span>🥄 嚥下対応食</span>
+        </div>
+      </div>
+      <div class="food-emoji">🍚</div>
+    </div>
+  </div>
+</section>
+
+<!-- 料金 -->
+<section class="fee" id="fee">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="en">FEE</span>
+      <h2>ご利用料金</h2>
+      <p>介護保険の自己負担分に、居住費・食費などが加わります。</p>
+    </div>
+    <div class="fee-note">
+      ※ 下記は<strong>料金構成のイメージ（サンプル）</strong>です。介護度・所得・居室タイプにより金額は異なります。実際の料金が決まり次第、差し替えます。
+    </div>
+    <div class="fee-table-wrap">
+      <table class="fee-table">
+        <thead>
+          <tr><th>費用項目</th><th>目安（1日あたり・税込）</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>介護サービス費（自己負担1〜3割）</th><td class="price">●●● 円〜</td></tr>
+          <tr><th>居住費（多床室）</th><td class="price">●●● 円</td></tr>
+          <tr><th>居住費（従来型個室）</th><td class="price">●,●●● 円</td></tr>
+          <tr><th>食費</th><td class="price">●,●●● 円</td></tr>
+          <tr><th>日常生活費（理美容・おむつ等）</th><td class="price">実費</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fee-foot">
+      ※ 所得に応じた負担限度額認定（軽減制度）の対象となる場合があります。<br>
+      ※ 介護度・居室タイプ・ご利用内容により料金は異なります。詳しくはお気軽にお問い合わせください。
+    </p>
+  </div>
+</section>
+
+<!-- 居室・設備ギャラリー -->
+<section class="gallery" id="gallery">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="en">FACILITY</span>
+      <h2>居室・設備のご紹介</h2>
+      <p>写真を差し替えるだけで、ページが完成します。</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><div class="ph"><span class="ic">🛏</span><span class="cap">多床室（80床）</span><span class="tag">写真差し替え予定</span></div></div>
+      <div class="gallery-item"><div class="ph"><span class="ic">🚪</span><span class="cap">従来型個室（20床）</span><span class="tag">写真差し替え予定</span></div></div>
+      <div class="gallery-item"><div class="ph"><span class="ic">💪</span><span class="cap">リハビリ室</span><span class="tag">写真差し替え予定</span></div></div>
+      <div class="gallery-item"><div class="ph"><span class="ic">🍽</span><span class="cap">食堂</span><span class="tag">写真差し替え予定</span></div></div>
+      <div class="gallery-item"><div class="ph"><span class="ic">🛁</span><span class="cap">浴室・機械浴</span><span class="tag">写真差し替え予定</span></div></div>
+      <div class="gallery-item"><div class="ph"><span class="ic">🏢</span><span class="cap">外観・エントランス</span><span class="tag">写真差し替え予定</span></div></div>
+    </div>
+    <p class="gallery-note">※ 設備写真は仮のプレースホルダーです。実際のお写真をご提供いただき次第、差し替えます。Instagramのお写真も活用できます。</p>
+  </div>
+</section>
+
+<!-- ご入所までの流れ -->
+<section class="flow" id="flow">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="en">FLOW</span>
+      <h2>ご入所までの流れ</h2>
+      <p>お問い合わせから、ご入所までの5ステップ。（内容は一般的な流れの仮置きです）</p>
+    </div>
+    <div class="flow-list">
+      <div class="flow-step">
+        <div class="step-num"><span class="label-step">STEP</span><span class="num">1</span></div>
+        <div><h3>お問い合わせ・ご相談</h3><p>お電話・メールよりご連絡ください。ご本人の状況やご希望をうかがいます。</p></div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num"><span class="label-step">STEP</span><span class="num">2</span></div>
+        <div><h3>ご見学</h3><p>施設の雰囲気やリハビリ・お部屋をご覧いただけます。お気軽にご見学ください。</p></div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num"><span class="label-step">STEP</span><span class="num">3</span></div>
+        <div><h3>お申し込み・面談</h3><p>必要書類をご提出いただき、健康状態や介護の状況をうかがいます。</p></div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num"><span class="label-step">STEP</span><span class="num">4</span></div>
+        <div><h3>入所判定</h3><p>医師・専門職が、入所の適否やリハビリ計画について検討します。</p></div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num"><span class="label-step">STEP</span><span class="num">5</span></div>
+        <div><h3>ご入所・ケア開始</h3><p>ご契約のうえご入所。在宅復帰に向けたケア・リハビリをスタートします。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- アクセス -->
+<section class="access">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="en">ACCESS</span>
+      <h2>アクセス</h2>
+      <p>さいたま市西区三橋。大宮駅・西大宮駅からお越しいただけます。</p>
+    </div>
+    <div class="access-grid">
+      <div class="access-info">
+        <h3>介護老人保健施設 ル・サンク湯澤</h3>
+        <div class="row"><span class="lbl">所在地</span><span>〒331-0052<br>さいたま市西区三橋6丁目567番地</span></div>
+        <div class="row"><span class="lbl">電話</span><span>048-622-8170</span></div>
+        <div class="row"><span class="lbl">FAX</span><span>048-622-8171</span></div>
+        <div class="row"><span class="lbl">バス</span><span>大宮駅西口より東武バス「大69」をご利用ください</span></div>
+        <div class="row"><span class="lbl">徒歩</span><span>西大宮駅より徒歩 約20分</span></div>
+      </div>
+      <div class="access-map">
+        <iframe src="https://maps.google.com/maps?q=%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E8%A5%BF%E5%8C%BA%E4%B8%89%E6%A9%8B6%E4%B8%81%E7%9B%AE567&hl=ja&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ル・サンク湯澤の地図"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="en">CONTACT</span>
+      <h2>お問い合わせ・ご見学</h2>
+      <p>お電話・メールでお気軽にどうぞ。ご見学も随時受け付けています。</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📞 お電話でのご相談</h3>
+        <p class="desc">見学のご予約・ご相談を承ります。</p>
+        <div class="big-tel">048-622-8170</div>
+        <div class="sub-line">FAX：048-622-8171</div>
+        <button type="button" class="btn-form" onclick="openTelModal()">電話番号を表示</button>
+      </div>
+      <div class="contact-card">
+        <h3>✉ メール・SNS</h3>
+        <p class="desc">メールやInstagramからもご覧・ご連絡いただけます。</p>
+        <div class="links">
+          <a href="mailto:lecinq@hakushinkai.or.jp">✉ lecinq@hakushinkai.or.jp</a>
+          <a href="https://www.instagram.com/lecinqyuzawa/" target="_blank" rel="noopener">📷 Instagram（@lecinqyuzawa）</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="hakushinkai_logo_mark.png" alt="医療法人 博滇会" class="logo-mark-img">
+          <div class="logo-divider"></div>
+          <div class="logo-text">
+            <div class="ja">ル・サンク湯澤</div>
+            <div class="sub">介護老人保健施設 ／ 医療法人 博滇会</div>
+          </div>
+        </div>
+        <p style="margin-top:14px;">さいたま市西区三橋で、在宅復帰をめざすリハビリと医療・介護をご提供する介護老人保健施設です。</p>
+      </div>
+      <div>
+        <h4>サイト内リンク</h4>
+        <ul>
+          <li><a href="#about">施設について</a></li>
+          <li><a href="#services">サービス内容</a></li>
+          <li><a href="#food">食事の取り組み</a></li>
+          <li><a href="#fee">ご利用料金</a></li>
+          <li><a href="#gallery">居室・設備</a></li>
+          <li><a href="#flow">ご入所の流れ</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>関連サイト・SNS</h4>
+        <ul>
+          <li><a href="https://hakushinkai.jp/" target="_blank" rel="noopener">医療法人 博滇会</a></li>
+          <li><a href="#">湯澤医院</a></li>
+          <li><a href="https://www.instagram.com/lecinqyuzawa/" target="_blank" rel="noopener">Instagram（@lecinqyuzawa）</a></li>
+          <li><a href="https://arwrk.net/recruit/hakushinkai" target="_blank" rel="noopener">求人情報</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <a class="group-site-card" href="https://hakushinkai.jp/" target="_blank" rel="noopener">
+      <img src="hakushinkai_logo.png" alt="医療法人 博滇会">
+      <div class="gs-text">
+        <div class="gs-name">医療法人 博滇会</div>
+        <div class="gs-desc">ル・サンク湯澤は医療法人 博滇会の施設です。法人サイトはこちら</div>
+      </div>
+      <div class="gs-arrow">→</div>
+    </a>
+    <div class="copyright">© 介護老人保健施設 ル・サンク湯澤 ／ 医療法人 博滇会（テストサイト）</div>
+  </div>
+</footer>
+
+<!-- 電話モーダル -->
+<dialog id="telModal" class="tel-modal" aria-labelledby="telModalTitle">
+  <div class="tel-modal-inner">
+    <h3 id="telModalTitle">📞 お電話でのご相談</h3>
+    <p class="desc">タップでそのまま発信できます。</p>
+    <a href="tel:0486228170" class="big">📞 048-622-8170</a>
+    <p class="hours">FAX：048-622-8171</p>
+    <button type="button" class="tel-modal-close" onclick="closeTelModal()">閉じる</button>
+  </div>
+</dialog>
+
+<script>
+  function openTelModal(){var m=document.getElementById('telModal');if(m&&typeof m.showModal==='function'){m.showModal();}else{var c=document.getElementById('contact');if(c)c.scrollIntoView({behavior:'smooth'});}}
+  function closeTelModal(){var m=document.getElementById('telModal');if(m&&typeof m.close==='function')m.close();}
+  document.addEventListener('DOMContentLoaded',function(){var m=document.getElementById('telModal');if(m)m.addEventListener('click',function(e){if(e.target===m)closeTelModal();});});
+</script>
+
+</body>
+</html>
